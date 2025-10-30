@@ -18,7 +18,7 @@
     padding: 0;
     overflow: hidden; /* evita scroll extra */
     font-family: 'Inter', system-ui, Arial, sans-serif;
-    background: linear-gradient(135deg, #2c2f36, #1a1c23); /* fondo más oscuro */
+    background-color: #242b38; /* gris azulado oscuro */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,42 +26,30 @@
     position: relative;
   }
 
-  /* Fondo decorativo sutil */
-  body::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
-    z-index: 0;
-  }
-
   .container {
     position: relative;
     z-index: 1;
     text-align: center;
-    max-width: 500px;
-    width: 100%;
-    padding: 25px;
+    max-width: 700px; /* contenedor más grande */
+    width: 95%;
+    padding: 45px; /* más espacio interno */
     border-radius: 20px;
     background-color: rgba(255,255,255,0.95);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.3);
   }
 
   img {
     max-width: 100%;
     height: auto;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
     margin-bottom: 28px;
   }
 
   .btn-download {
     display: inline-block;
-    padding: 16px 28px;
-    font-size: 20px;
+    padding: 20px 36px;
+    font-size: 24px;
     font-weight: 700;
     font-family: 'Inter', system-ui, Arial, sans-serif;
     color: #fff;
@@ -82,7 +70,7 @@
 <body>
   <div class="container">
     <img src="tarjeta-ricardo.png" alt="Tarjeta de Ricardo Sosa">
-    <a class="btn-download" href="Ricardo_Sosa.vcf" download>📥 Guardar contacto</a>
+    <a class="btn-download" href="Ricardo_Sosa.vcf" download> > Guardar contacto < </a>
   </div>
 </body>
 </html>
